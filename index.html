@@ -81,6 +81,34 @@ li.dropdown {
   display: block;
 }
 
+ly {
+  float: left;
+}
+
+ly a {
+  display: block;
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+lyy {
+  float: right;
+}
+
+lyy a {
+  display: block;
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .active {
   background-color: orange;
 }
@@ -110,6 +138,13 @@ h1 {
   text-align: center;
   font-family: verdana;
   font-size: 60px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: verdana;
+  font-size: 10px;
 }
 </style>
 </head>
@@ -150,16 +185,30 @@ h1 {
 </uq>
 
 <uq>
-
-  <iframe width="420" height="345" src="https://www.youtube.com/embed/ovpJH6SpsM0">
-  </iframe>
-
-  <iframe width="470" height="345" src="https://www.youtube.com/embed/UZ_a9cOSyfU">
-  </iframe>
-
-  <li style="float:right"><iframe width="420" height="345" src="https://www.youtube.com/embed/-sU53rPYJxg"></li>
-  </iframe>
+<ly><a>Bạn đã đến vào lúc</a></ly>
+<lyy><a id="demo1"></a></lyy>
+<lyy><a> : </a></lyy>
+<lyy><a id="demo"></a></lyy>
 </uq>
+
+<script>
+const h = new Date();
+document.getElementById("demo").innerHTML = h.getHours();
+</script>
+
+<script>
+const d = new Date();
+document.getElementById("demo1").innerHTML = d.getMinutes();
+</script>
+
+<iframe width="" height="" src="https://www.youtube.com/embed/ovpJH6SpsM0">
+</iframe>
+
+<iframe width="" height="" src="https://www.youtube.com/embed/UZ_a9cOSyfU">
+</iframe>
+
+<iframe width="" height="" src="https://www.youtube.com/embed/-sU53rPYJxg">
+</iframe>
 
 
 
