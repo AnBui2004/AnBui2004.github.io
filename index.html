@@ -8,6 +8,10 @@ body {
   background-color: grey;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 uq {
   list-style-type: none;
   margin: 0;
@@ -144,6 +148,20 @@ h2 {
   font-family: verdana;
   font-size: 10px;
 }
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -193,7 +211,7 @@ h2 {
   <ly style="float:left"><iframe width="100%" height="" src="https://www.youtube.com/embed/UZ_a9cOSyfU">
   </iframe></ly>
 
-  <ly style="float:left"><iframe width="200%" height="" src="https://www.youtube.com/embed/-sU53rPYJxg">
+  <ly style="float:left"><iframe width="100%" height="" src="https://www.youtube.com/embed/-sU53rPYJxg">
   </iframe></ly> 
 
 </uq>
