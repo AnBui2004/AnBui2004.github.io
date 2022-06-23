@@ -13,7 +13,7 @@ uq {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  float: none;
+  background-color: black;
 }
 
 ul {
@@ -21,7 +21,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: grey;
+  background-color: black;
 }
 
 li {
@@ -82,7 +82,8 @@ li.dropdown {
 }
 
 ly {
-  float: left;
+  display: block;
+
 }
 
 ly a {
@@ -91,9 +92,20 @@ ly a {
   font-family: verdana;
   font-size: 20px;
   text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+}
+
+ly b {
+  display: block;
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
+
 
 .active {
   background-color: orange;
@@ -135,7 +147,6 @@ h2 {
 </style>
 </head>
 <body>
-
 <ul>
   <li><a class="active4" href="index.html">Trang chủ</a></li>
   <li class="dropdown">
@@ -169,33 +180,23 @@ h2 {
   <li style="float:right"><a class="active4" href="https://www.youtube.com/channel/UCAsd2wrrqBXe9Bl2v-DdtYQ">Nguyen Bao An Bui</a></li>
   <li style="float:right"><a class="active5" href="https://www.youtube.com/channel/UCinn76GZMgmbmcpfrCtfBMA">An Bùi TWO</a></li>
 </uq>
-
+  <ly><b>|</b></ly>
 <uq>
-<ly><a id="demo"></a></ly>
-<ly><a>:</a></ly>
-<ly><a id="demo1"></a></ly>
+  
 </uq>
 
 <uq>
-  <iframe width="100%" height="" src="https://www.youtube.com/embed/ovpJH6SpsM0">
-  </iframe>
 
-  <iframe width="100%" height="" src="https://www.youtube.com/embed/UZ_a9cOSyfU">
-  </iframe>
+  <ly style="float:left"><iframe width="100%" height="" src="https://www.youtube.com/embed/ovpJH6SpsM0">
+  </iframe></ly>
 
-  <iframe width="100%" height="" src="https://www.youtube.com/embed/-sU53rPYJxg">
-  </iframe>
+  <ly style="float:left"><iframe width="100%" height="" src="https://www.youtube.com/embed/UZ_a9cOSyfU">
+  </iframe></ly>
+
+  <ly style="float:left"><iframe width="200%" height="" src="https://www.youtube.com/embed/-sU53rPYJxg">
+  </iframe></ly> 
+
 </uq>
-
-<script>
-const h = new Date();
-document.getElementById("demo").innerHTML = h.getHours();
-</script>
-
-<script>
-const d = new Date();
-document.getElementById("demo1").innerHTML = d.getMinutes();
-</script>
 
 </body>
 </html>
