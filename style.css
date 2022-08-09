@@ -22,13 +22,6 @@ footer2
     text-align: center;
     color: white;
 }
-h1
-{
-    color: white;
-    text-align: center;
-    font-family: verdana;
-    font-size: 300%; 
-}
 lin
 {
     list-style-type: none;
@@ -60,17 +53,12 @@ linna
 }
 linm
 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 60px;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 h1 {
     color: black;
-    text-align: center;
     font-family: verdana;
     font-size: 300%;
     transition: 0.5s;
